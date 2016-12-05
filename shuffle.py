@@ -1,6 +1,9 @@
 import random
 import os
-
+'''
+ABOUT
+Only works on Mac with VLC, put in directory with movies and it opens a random one. Simple and crude but I use it often. 
+'''
 #sets varible to home folder location
 currentDirectoryPath = os.getcwd()
 #imports all videos into a list 
@@ -16,6 +19,6 @@ if video == 'shuffle':
 #sets current directory for computer to folder
 os.system("cd " + str(currentDirectoryPath))
 #runs vlc to play selected video
-os.system("open -a vlc \'" + str(video) + """'""")
+os.system("open -a vlc \'" + str(video) + """'""") #escape end quote 
 
 quit() 
