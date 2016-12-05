@@ -1,3 +1,8 @@
+: <<'ABOUT'
+This is a simple program I made for when I am tryng to update where a domain name points. 
+the TTL for some services is shotty and this script notifies me when a URL points to a 
+different domain then it did when the script was started. 
+ABOUT
 #! /bin/bash
 now=$(date)
 echo $now
